@@ -1,0 +1,42 @@
+{
+  "name": "image-mosaic-web",
+  "version": "1.0.0",
+  "description": "对web端的图片进行打马赛克",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "npx husky install",
+    "dev": "cross-env NODE_ENV=local webpack-dev-server --config ./webpack/webpack.dev.conf.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.prod.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeremy-PC/image-mosaic-web.git"
+  },
+  "author": "jeremypc",
+  "license": "ISC",
+  "keywords": [
+    "mosaic",
+    "image-mosaic",
+    "image-mosaic-web",
+    "image"
+  ],
+  "bugs": {
+    "url": "https://github.com/Jeremy-PC/image-mosaic-web/issues"
+  },
+  "homepage": "https://github.com/Jeremy-PC/image-mosaic-web#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/runtime-corejs3": "^7.17.2",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  }
+}

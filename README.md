@@ -52,10 +52,10 @@
 ```javascript
 
 // 安装npm包
-  npm i image-mosaic-web
+  npm i @jeremypc/image-mosaic-web
 
 // 项目中引入包
-  import ImageMosaicWeb from "image-mosaic-web"
+  import ImageMosaicWeb from "@jeremypc/image-mosaic-web"
 
 // 初始化并调用
   const mo = new ImageMosaicWeb({

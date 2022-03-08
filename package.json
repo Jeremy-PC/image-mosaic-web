@@ -1,5 +1,5 @@
 {
-  "name": "image-mosaic-web",
+  "name": "@jeremypc/image-mosaic-web",
   "version": "1.0.0",
   "description": "对web端的图片进行打马赛克",
   "main": "dist/index.js",

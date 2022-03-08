@@ -29,6 +29,10 @@ module.exports = merge(baseConfig, {
           }
         },
       },
+      "/assets": {
+        target: `http://${configuration.host}:${configuration.port}`,
+        pathRewrite: { "^/assets": "" },
+      },
     },
     compress: true,
     liveReload: true,

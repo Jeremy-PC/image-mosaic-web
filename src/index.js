@@ -221,7 +221,8 @@ export default class {
   }
   onSave() {
     const base64 = this.canvas.toDataURL("image/png");
-    const file = this.dataURLtoFile(base64, "图片1");
+    const file = this.dataURLtoFile(base64, `img_${new Date().getTime()}`);
+    this.onClear();
     return { file, img: base64 };
   }
   onClear() {

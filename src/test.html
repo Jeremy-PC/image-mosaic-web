@@ -18,17 +18,19 @@
     <canvas id="vanvas"></canvas>
     <button id="revoked">撤销</button>
     <button id="save">保存</button>
+    <button id="update">更新</button>
   </body>
   <script type="text/javascript" src="index.js"></script>
   <script type="text/javascript">
     const el = document.getElementById("vanvas");
     const mo = new mosaic({
       el,
-      url: "./timg.jpeg",
+      url: "./assets/timg.jpeg",
     });
     mo.init();
     const revoked = document.getElementById("revoked");
     const save = document.getElementById("save");
+    const update = document.getElementById("update");
     revoked.onclick = function () {
       mo.onRevoked();
     };
@@ -41,6 +43,9 @@
       image.src = img;
       image.style = { width: "100%", height: "100%" };
       body.appendChild(image);
+    };
+    update.onclick = function () {
+      mo.update("./assets/update.jpeg");
     };
   </script>
 </html>

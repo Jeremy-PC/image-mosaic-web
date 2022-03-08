@@ -1,5 +1,4 @@
 const path = require("path");
-const webpack = require("webpack");
 // 根据相对路径获取绝对路径
 const resolvePath = (relativePath) =>
   path.resolve(__dirname, `../${relativePath}`);
@@ -14,7 +13,6 @@ const baseConfig = {
       type: "umd",
       export: "default",
     },
-    assetModuleFilename: "[name]",
   },
   module: {
     rules: [
